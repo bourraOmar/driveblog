@@ -47,8 +47,7 @@ if ($_SESSION['role_id'] == 2) {
                     <div class="hidden md:flex items-center space-x-8">
                         <a href="../index.php" class="text-white hover:text-gray-200 transition-all">Accueil</a>
                         <a href="#" class="text-white hover:text-gray-200 transition-all">Collection</a>
-                        <a href="#" class="text-white hover:text-gray-200 transition-all">Services</a>
-                        <div>
+                        <a href="blog.php" class="text-white hover:text-gray-200 transition-all">Blog</a>                        <div>
                             <a href="../profils/client.php"><img width="25px" class="bg-white rounded-full shadow-soft" src="../img/profile-major.svg" alt="Profile"></a>
                         </div>
                     </div>
@@ -68,7 +67,8 @@ if ($_SESSION['role_id'] == 2) {
         <div class="bg-white py-6 mb-8 shadow-sm">
             <div class="max-w-7xl mx-auto px-4">
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-                    <select class="w-full p-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" id="categoryFilter">
+                    <!-- Category Filter Dropdown -->
+                    <select class="w-full p-3 border-2 border-gray-200 rounded-lg focus:outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-200 transition-all">
                         <option value="all">Toutes les catégories</option>
                         <?php
                         $arr = $categorie->showCategorie();
@@ -77,11 +77,21 @@ if ($_SESSION['role_id'] == 2) {
                         }
                         ?>
                     </select>
-                    <input type="search" name="searchByName" class="w-full p-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" id="searchByName">
+
+                    <!-- Search Input -->
+                    <div class="relative flex items-center">
+                        <input type="search" name="searchByName" id="searchByName" placeholder="Rechercher un véhicule..."
+                            class="w-full p-3 pl-10 border-2 border-gray-200 rounded-lg focus:outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-200 transition-all" />
+                        <!-- Search Icon -->
+                        <span class="absolute left-3 text-gray-400">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                            </svg>
+                        </span>
+                    </div>
                 </div>
             </div>
         </div>
-
         <!-- Vehicle Grid -->
         <div class="max-w-7xl mx-auto px-4 mb-12">
             <div id="container" class="grid grid-cols-1 md:grid-cols-3 gap-6">

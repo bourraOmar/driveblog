@@ -85,8 +85,7 @@ if ($_SESSION['role_id'] != 2) {
         <div class="hidden md:flex items-center space-x-8">
           <a href="../index.php" class="text-white hover:text-gray-200 transition duration-300">Accueil</a>
           <a href="#" class="text-white hover:text-gray-200 transition duration-300">Collection</a>
-          <a href="#" class="text-white hover:text-gray-200 transition duration-300">Services</a>
-          <div>
+          <a href="pages/blog.php" class="text-white hover:text-gray-200 transition-all">Blog</a>          <div>
             <a href="../profils/client.php"><img width="25px" class="bg-white rounded-full" src="../img/profile-major.svg" alt="Profile"></a>
           </div>
         </div>

@@ -29,6 +29,7 @@ $reservation = new reservation();
             <h1 class="text-2xl font-bold">My Profile</h1>
             <div class="flex gap-4">
                 <a href="../index.php" class="px-4 py-2 hover:bg-blue-700 rounded-lg transition duration-300">Home</a>
+                <a href="../profils/dashboardClient.php" class="px-4 py-2 hover:bg-blue-700 rounded-lg transition duration-300">My Dashboard</a>
                 <form action="log out.php" method="post">
                     <button class="bg-red-500 hover:bg-red-600 text-white px-4 py-2 rounded-lg flex items-center transition duration-300" name="LogoutBTN">
                         <i class="fas fa-sign-out-alt mr-2"></i> Logout

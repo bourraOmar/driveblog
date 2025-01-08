@@ -49,6 +49,7 @@ session_start();
                 <div class="hidden md:flex items-center space-x-8">
                     <a href="index.php" class="text-white hover:text-gray-200 transition-all">Accueil</a>
                     <a href="pages/menu.php" class="text-white hover:text-gray-200 transition-all">Collection</a>
+                    <a href="pages/blog.php" class="text-white hover:text-gray-200 transition-all">Blog</a>
                     <button class="bg-white text-blue-600 px-4 py-2 rounded-lg hover:bg-gray-100 transition-all">
                         Réserver maintenant
                     </button>

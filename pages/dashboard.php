@@ -103,7 +103,7 @@ if ($_SESSION['role_id'] == 1) {
                         <span class="text-2xl font-bold text-white">D&L</span>
                     </div>
                     <div class="flex items-center space-x-4">
-                        <span class="text-white"><?php echo $_SESSION['nom'] ?></span>
+                        <span class="text-white"><?php echo $_SESSION['nom'] ." ".  $_SESSION['prenom']?></span>
                         <a href="../profils/log out.php" class="bg-red-600 text-white px-4 py-2 rounded-lg hover:bg-red-700 transition-all">Logout</a>
                     </div>
                 </div>
@@ -112,7 +112,7 @@ if ($_SESSION['role_id'] == 1) {
 
         <!-- Hero Section -->
         <div class="pt-24 bg-gradient-primary text-white">
-            <div class="mx-auto p-4 py-20">
+            <div class="mx-auto p-4 py-5">
                 <div class="grid md:grid-cols-2 gap-8 items-center">
                     <div class="text-center md:text-left">
                         <h4 class="text-2xl font-bold">Admin Space</h4>
