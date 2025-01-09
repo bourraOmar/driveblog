@@ -2,9 +2,10 @@
  require_once '../connection/connect.php';
 
  class Theme {
-    protected $them_name;
-    protected $them_desc;
-    protected $them_date;
+    public $theme_id;
+    public $them_name;
+    public $them_desc;
+    public $them_date;
     private $pdo;
 
     function __construct(){
@@ -12,18 +13,17 @@
       $this->pdo = $connection->connectpdo();
     }
 
-    function ajouterTheme($them_name, $them_desc, $them_date){
+    function ajouterTheme($them_name, $them_desc){
       $this->them_name = $them_name;
       $this->them_desc = $them_desc;
-      $this->them_date = $them_date;
 
-      $sql = "INSERT INTO theme VALUES(name, description, date_creation)";
+      $sql = "INSERT INTO theme VALUES(:name, :description, CURDATE())";
 
       $stmt = $this->pdo->prepare($sql);
 
-      $stmt->bindParam(':nom', $them_name);
-      $stmt->bindParam(':description', $them_desc);
-      $stmt->bindParam(':date_creation', $them_date);
+      $stmt->bindParam(':nom', $this->them_name);
+      $stmt->bindParam(':description', $this->them_desc);
+      $stmt->bindParam(':date_creation', $this->them_date);
 
       if($stmt->execute()){
         header('Location: ../profils/dashboardClient.php');
