@@ -94,10 +94,10 @@ A modern vehicle rental platform designed to make browsing, booking, and managin
 
 ## 📊 Diagrams
 - **UML Use Case Diagram**  
-  ![UML Use Case Diagram](https://lucid.app/lucidchart/04718ec9-5f96-4924-99dd-696bd4709b77/edit?viewport_loc=-2016%2C-422%2C5120%2C2416%2C0_0&invitationId=inv_37671a45-1218-4a1f-8ac2-564429b8b7f2)
+  https://lucid.app/lucidchart/04718ec9-5f96-4924-99dd-696bd4709b77/edit?viewport_loc=-2016%2C-422%2C5120%2C2416%2C0_0&invitationId=inv_37671a45-1218-4a1f-8ac2-564429b8b7f2
   
 - **Class Diagram**  
-  ![Class Diagram](https://lucid.app/lucidchart/29960632-e59a-4a9c-94ea-12314694f68c/edit?invitationId=inv_acda743b-1c36-4567-a075-94e772308284)
+  https://lucid.app/lucidchart/29960632-e59a-4a9c-94ea-12314694f68c/edit?invitationId=inv_acda743b-1c36-4567-a075-94e772308284
 
 ---
 
